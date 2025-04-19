@@ -37,7 +37,7 @@ npx playwright test
 ```
 
 > [!NOTE]
-> The test is located in `tests/login.spec.js`.
+> The tests are located in `tests/login.spec.js`.
 
 ## Why Page Object Model (POM) ?
 
