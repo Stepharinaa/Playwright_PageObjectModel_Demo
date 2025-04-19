@@ -36,8 +36,8 @@ npm install
 npx playwright test
 ```
 
-[!NOTE]
-The test is located in `tests/login.spec.js`.
+> [!NOTE]
+> The test is located in `tests/login.spec.js`.
 
 ## Why Page Object Model (POM) ?
 
