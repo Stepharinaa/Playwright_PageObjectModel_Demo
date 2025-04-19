@@ -3,13 +3,15 @@ import { LoginPage } from "../Pages/login";
 
 // @ts-check
 
-test("test", async ({ page }) => {
+test("Ensure login passes with correct username and password", async ({
+  page,
+}) => {
   const Login = new LoginPage(page);
 
   await Login.goToLoginPage();
   await Login.login("tomsmith", "SuperSecretPassword!");
 
-  await page.pause();
+  await page.close();
 
   // await page.locator("id=username").click();
   // await page.locator("id=username").fill("tomsmith");
