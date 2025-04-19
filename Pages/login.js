@@ -4,6 +4,7 @@ exports.LoginPage = class LoginPage {
     this.username_textbox = page.locator("id=username");
     this.password_textbox = page.locator("id=password");
     this.submit_button = page.getByRole("button", { name: " Login" });
+    this.invalid_alert = page.locator("id=flash");
   }
 
   async goToLoginPage() {
