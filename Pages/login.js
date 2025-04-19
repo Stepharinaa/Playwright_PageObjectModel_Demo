@@ -11,10 +11,6 @@ exports.LoginPage = class LoginPage {
     await this.page.goto("https://the-internet.herokuapp.com/login");
   }
 
-  async securePage() {
-    await this.page.goto("https://the-internet.herokuapp.com/secure");
-  }
-
   // Instead of hardcoding a username and password, I've added dynamic variables instead to ensure the login function is more resuable
   async login(username, password) {
     await this.username_textbox.fill(username);
