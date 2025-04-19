@@ -1,4 +1,4 @@
-exports.LoginPage = class LoginPage {
+export class LoginPage {
   constructor(page) {
     this.page = page;
     this.username_textbox = page.locator("id=username");
@@ -17,4 +17,4 @@ exports.LoginPage = class LoginPage {
     await this.password_textbox.fill(password);
     await this.submit_button.click();
   }
-};
+}
