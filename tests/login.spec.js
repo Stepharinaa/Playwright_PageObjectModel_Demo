@@ -9,7 +9,7 @@ test("should log in successfully with valid credentials", async ({ page }) => {
   await login.goToLoginPage();
   await login.login("tomsmith", "SuperSecretPassword!");
 
-  await login.securePage();
+  await expect(page).toHaveURL(/.*secure/);
 });
 
 test("should show an error with invalid credentials", async ({ page }) => {
